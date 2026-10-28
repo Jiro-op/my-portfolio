@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { profile } from "../data/profile.js";
 import { Link, NavLink } from "react-router";
 
 const links = [
@@ -18,7 +19,7 @@ function Navbar () {
         <header className="navbar">
             <div className="container navbar-inner">
                 <Link to="/" className="brand" onClick={() => setOpen(false)}>
-                Julian Renz M. Zoleta
+                {profile.name}
                 </Link>
 
                 <button
