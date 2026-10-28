@@ -114,3 +114,39 @@ img {display: block; max-width: 100%; height: auto;}
 }
 
 .footer p {margin: 0; font-size: 0.85rem;}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0.6rem;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(text);
+}
+
+@media (max-width: 1024px) {
+  .menu-toggle {display: flex;}
+  .navbar nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    padding: var(--space-2) 1.25rem var(--space-3);
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+  }
+  
+  .navbar nav.open {display: flex;}
+  .navbar nav a {padding-block: 0.8rem; font-size: 0.85rem;}
+}
