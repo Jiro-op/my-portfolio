@@ -107,3 +107,10 @@ img {display: block; max-width: 100%; height: auto;}
   z-index: 10;
   background: var(--bg);
 }
+
+.footer {
+  border-top: 1px solid var(--line);
+  padding-block: var(--space-4);
+}
+
+.footer p {margin: 0; font-size: 0.85rem;}
