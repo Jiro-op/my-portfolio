@@ -129,7 +129,7 @@ img {display: block; max-width: 100%; height: auto;}
   display: block;
   width: 24px;
   height: 2px;
-  background: var(text);
+  background: var(--text);
 }
 
 @media (max-width: 1024px) {
