@@ -231,3 +231,57 @@ img {display: block; max-width: 100%; height: auto;}
   .hero-photo {justify-self: end;}
   .about-grid {grid-template-columns: 1.4fr 1fr;}
 }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.card {
+  padding: var(--space-3);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.card h3 {margin-bottom: var(--space-2);}
+
+.timeline {
+  list-style: none;
+  margin: var(--space-4) 0 0;
+  padding: 0 0 0 var(--space-4);
+  border-left: 1px solid var(--line);
+}
+
+.timeline-item {position: relative; padding-bottom: var(--space-4); }
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--space-4) - 5px);
+  top: 0.35rem;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.timeline h4 {
+  margin: var(--space-2) 0 0.3rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.timeline ul {margin: 0; padding-left: 1.2rem;}
+
+.section h2 {margin-top: var(--space-5); }
+.entry-list {display: grid; gap: var(--space-3);}
+.entry {
+  padding-block: var(--space-2);
+  border-bottom: 1px solid var(--line);
+}
+
+.entry p {margin-bottom: 0.25rem; }
