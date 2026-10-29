@@ -285,3 +285,90 @@ img {display: block; max-width: 100%; height: auto;}
 }
 
 .entry p {margin-bottom: 0.25rem; }
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.filter-search {grid-column: 1 / -1;}
+.filter {display: grid; gap: 0.3rem;}
+.filter span {
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.filter input,
+.filter select {
+  width: 100%;
+  padding: 0.7rem 0;
+  background: transparent;
+  color: var(--text);
+  border: 0;
+  border-bottom: 1px solid var(--text);
+  border-radius: 0;
+  font: inherit;
+}
+
+.filter select {cursor: pointer;}
+.results-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-2);
+  margin: var(--space-3) 0 var(--space-4);
+}
+
+.results-bar p {margin: 0; font-size: 0.85rem;}
+.link-button {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: var(--space-4) var(--space-3);
+}
+
+.project-card {display: flex; flex-direction: column;}
+.project-image-link {display: block; overflow: hidden; border-radius: 4px;}
+.project-image-link img,
+.image-placeholder {
+  width: 100%;
+  aspect-ratio:  4 / 3;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.project-card:hover .project-image-link img {transform: scale(1.04);}
+.image-placeholder {
+  display: grid;
+  place-items: center;
+  background: var(--line);
+  color: var(--muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.project-body {padding-top: var(--space-2);}
+.project-body h3 {margin-bottom: 0.4rem;}
+.project-body p {margin-bottom: var(--space-2);}
+.project-meta {font-size:  0.8rem; color: var(--muted);}
+.project-actions {display: flex; flex-wrap: wrap; gap: 0.6rem;}
+.project-actions .btn {padding: 0.6rem 1,1rem; font-size: 0.7rem;}
+.chips-small {margin-bottom: var(--space-2);}
+.chips-small li {padding: 0.2rem 0.7rem; font-size: 0.75rem;}
