@@ -2,7 +2,7 @@ export const education = [
     {
         degree: "Bachelor of Science in Information Technology",
         school: "City College of Calamba",
-        year: "2024 - 2027",
+        year: "2024 - 2029",
     },
 ];
 

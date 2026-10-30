@@ -1,16 +1,24 @@
 export const skillCategories = [
     {
-        title: "Design tools",
-        items: ["Adobe Lightroom", "Figma", "Canva"],
+        title: "Tools",
+        items: ["Adobe Lightroom","Adobe Photoshop", "Canva", "Capcut", 
+                "Visual Studio","GitHub","Figma"],
     },
     {
-        title: "Design skills",
+        title: "Photography & Technical Skills",
         items: [
-            "",
-            "",
-            "",
-            "",
-            "",
+            "Photo Editing",
+            "Video Editing",
+            "Photography",
+            "Color Grading",
+            "Visual Storytelling",
+            "HTML 5",
+            "CSS3",
+            "React",
+            "JavaScript", 
+            "Front-End Development",
+            "UI/UX Design",
+            "Website Optimization",
         ],
     },
     {
@@ -21,6 +29,8 @@ export const skillCategories = [
             "Time Management",
             "Teamwork",
             "Problem solving",
+            "Attention to Detail",
+            "Adaptability",
         ],
     },
 ];

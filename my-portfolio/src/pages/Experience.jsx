@@ -17,6 +17,13 @@ function Experience () {
 
                         <h4>Responsibilities</h4>
                         <ul>
+                            {job.responsibilities.map((item) => (
+                                <li key={item}>{item}</li>
+                            ))}
+                        </ul>
+
+                        <h4>Major Accomplishments</h4>
+                        <ul>
                             {job.accomplishments.map((item) => (
                                 <li key={item}>{item}</li>
                             ))}
