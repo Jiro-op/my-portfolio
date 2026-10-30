@@ -18,7 +18,7 @@ export const projects = [
         overview: "",
         problem: "",
         solution: "",
-        features: "",
+        features: [],
         screenshots: [],
     },
     {
@@ -40,7 +40,7 @@ export const projects = [
         overview: "",
         problem: "",
         solution: "",
-        features: "",
+        features: [],
         screenshots: [],
     },
     {
@@ -62,7 +62,7 @@ export const projects = [
         overview: "",
         problem: "",
         solution: "",
-        features: "",
+        features: [],
         screenshots: [],
     },
 ];
