@@ -426,3 +426,25 @@ img {display: block; max-width: 100%; height: auto;}
   .project-layout {grid-template-columns: 1.6fr 1fr; gap: var(--space-5); align-items: start;}
   .project-facts {order: 0; position: sticky; top: 6rem;}
 }
+
+.navbar-controls {display: flex; align-items: center; gap: 0.5rem;}
+.navbar nav {margin-left: auto; margin-right: var(--space-3);}
+.theme-toggle {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.theme-toggle:hover {border-color: var(--accent); color: var(--accent);}
+
+@media (max-width: 1024px) {
+  .navbar nav {margin: 0;}
+}

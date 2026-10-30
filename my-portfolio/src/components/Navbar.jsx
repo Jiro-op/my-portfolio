@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { profile } from "../data/profile.js";
 import { Link, NavLink } from "react-router";
+import { profile } from "../data/profile.js";
+import ThemeToggle from "./ThemeToggle.jsx";
 
 const links = [
     {to: "/", label:"Home"},
@@ -22,25 +23,29 @@ function Navbar () {
                 {profile.name}
                 </Link>
 
-                <button
-                className="menu-toggle"
-                aria-label="Toggle menu"
-                aria-expanded={open}
-                aria-controls="main-nav"
-                onClick={() => setOpen(!open)}
-                >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
                 <nav id="main-nav" className={open ? "open" : ""}>
-                    {links.map((link) => (
-                        <NavLink key={link.to} to={link.to} onClick={() => setOpen(false)}>
-                            {link.label}
-                        </NavLink>
-                    ))}
-                </nav>
+                {links.map((link) => (
+                    <NavLink key={link.to} to={link.to} onClick={() => setOpen(false)}>
+                        {link.label}
+                    </NavLink>
+                ))}
+               </nav> 
+
+               <div className="navbar-controls">
+                <ThemeToggle />
+                <button
+                    type="button"
+                    className="menu-toggle"
+                    aria-label="Toggle menu"
+                    aria-expanded={open}
+                    aria-controls="main-nav"
+                    onClick={() => setOpen(!open)}
+                >
+                 <span></span>
+                 <span></span>
+                 <span></span>
+                </button>
+               </div>
             </div>
         </header>
     );
