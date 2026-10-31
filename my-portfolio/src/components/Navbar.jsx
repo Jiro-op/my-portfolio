@@ -11,6 +11,7 @@ const links = [
     {to: "/projects", label:"Projects"},
     {to: "/education", label:"Education"},
     {to: "/contact", label:"Contact"},
+    {to: "/cv", label: "CV"},
 ];
 
 function Navbar () {

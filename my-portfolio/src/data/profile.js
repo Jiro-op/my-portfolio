@@ -5,6 +5,7 @@ export const profile = {
     tagline: "Capturing Moments, Creating Stories.",
     intro: "I am a freelance photographer with a strong background in front-end web development, combining technical precision with an eye for compelling visual storytelling. Having spent two years building clean, responsive digital experiences, I bring a unique understanding of composition, lighting, and layout to every shoot. My focus is on crafting clean, high-impact imagery that elevates brands, captures authentic moments, and seamlessly translates across both print and digital platforms.",
     photo: "/profile/profile.jpg",
+    cv: "/files/Julian Renz.pdf",
     location: "Calamba City, Philippines",
     email: "zoletajulianrenz@gmail.com",
     phone: "+63 968 438 4838",
@@ -27,3 +28,6 @@ export const profile = {
         {label: "GitHub", url:"https://github.com/Jiro-op/"},
     ],
 };
+
+export const cvFileName =
+    profile.name.replace(/[^a-z0-9]+/gi, "_").replace(/^|-$/g, "") + "-Julian Renz.pdf";

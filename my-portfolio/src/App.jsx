@@ -11,6 +11,7 @@ import ProjectDetail from "./pages/ProjectDetail.jsx";
 import Education from "./pages/Education.jsx";
 import Contact from "./pages/Contact.jsx";
 import NotFound from "./pages/NotFound.jsx";
+import CV from "./pages/CV.jsx";
 
 
 function App() {
@@ -28,7 +29,9 @@ function App() {
         <Route path="/projects/:slug" element={<ProjectDetail />} />
         <Route path="/education" element={<Education />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/cv" element={<CV />} />
         <Route path="*" element={<NotFound />} />
+        
       </Routes>
     </main>
     <Footer />
