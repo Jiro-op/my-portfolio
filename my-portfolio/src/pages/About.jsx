@@ -18,6 +18,7 @@ function About () {
             <h1>About me</h1>
 
             <div className="about-grid">
+                <h2 className="sr-only">Biography</h2>
                 <div>
                     {profile.bio.map((paragraph, index) => (
                         <p key={index}>{paragraph}</p>

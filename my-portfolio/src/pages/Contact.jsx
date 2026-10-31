@@ -123,6 +123,7 @@ function Contact() {
 
       <div className="contact-grid">
         <div className="contact-details">
+            <h2 className="sr-only">Contact details</h2>
           <h3>Get in touch</h3>
           <ul className="contact-list">
             <li>
@@ -143,6 +144,7 @@ function Contact() {
         </div>
 
         <form className="contact-form" onSubmit={handleSubmit} noValidate>
+            <h2 className="sr-only">Send a message</h2>
           <Field label="Name" name="name" value={values.name} onChange={handleChange} error={errors.name} maxLength={80} />
           <Field label="Email" name="email" type="email" value={values.email} onChange={handleChange} error={errors.email} maxLength={120} />
           <Field label="Subject" name="subject" value={values.subject} onChange={handleChange} error={errors.subject} maxLength={120} />

@@ -7,6 +7,7 @@ function Experience () {
             <h1>Experience</h1>
 
             <ol className="timeline">
+                <h2 className="sr-only">Positions held</h2>
                 {experience.map((job) => (
                     <li key={job.position + job.dates} className="timeline-item">
                         <p className="eyebrow">{job.dates}</p>

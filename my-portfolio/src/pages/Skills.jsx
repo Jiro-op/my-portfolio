@@ -7,6 +7,7 @@ function Skills() {
             <h1>What I do best</h1>
             
             <div className="card-grid">
+                <h2 className="sr-only">Skill categories</h2>
                 {skillCategories.map((category) =>(
                     <article key={category.title} className="card">
                         <h3>{category.title}</h3>

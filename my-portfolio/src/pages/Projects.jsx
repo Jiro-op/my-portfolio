@@ -89,6 +89,7 @@ function Projects() {
                 </button>
             </div>
 
+            <h2 className="sr-only">Project list</h2>
             {results.length > 0 ? (
                 <div className="project-grid">
                     {results.map((project) => (
