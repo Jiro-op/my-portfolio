@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://my-portfolio-tau-gray-59.vercel.app/sitemap.xml

@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
+import Seo from "./components/Seo.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Skills from "./pages/Skills.jsx";
@@ -14,10 +15,12 @@ import NotFound from "./pages/NotFound.jsx";
 import CV from "./pages/CV.jsx";
 
 
+
 function App() {
   return (
     <>
     <ScrollToTop />
+    <Seo />
     <Navbar />
     <main>
       <Routes>
