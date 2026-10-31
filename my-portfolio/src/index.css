@@ -483,3 +483,87 @@ img {display: block; max-width: 100%; height: auto;}
 }
 .social-list a:hover .social-name { color: var(--accent); }
 .social-list a:hover .social-arrow { transform: translate(3px, -3px); }
+
+:root { --error: #b3261e; }
+[data-theme="dark"] { --error: #ff8a80; }
+
+.contact-grid { display: grid; gap: var(--space-5); margin-top: var(--space-4); }
+.contact-details h3 { margin-bottom: var(--space-2); }
+.contact-list {
+  list-style: none;
+  margin: 0 0 var(--space-4);
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+.contact-list li {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  gap: var(--space-2);
+  padding-block: 0.9rem;
+  border-bottom: 1px solid var(--line);
+}
+.contact-list span {
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.contact-list a { overflow-wrap: anywhere; }
+.contact-list p { margin: 0; }
+
+.contact-form { display: grid; gap: var(--space-3); }
+.contact-form .btn { justify-self: start; }
+.contact-form .btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.field { display: grid; gap: 0.3rem; }
+.field label {
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 0.7rem 0;
+  background: transparent;
+  color: var(--text);
+  border: 0;
+  border-bottom: 1px solid var(--text);
+  border-radius: 0;
+  font: inherit;
+}
+.field textarea { min-height: 9rem; resize: vertical; }
+.field input[aria-invalid="true"],
+.field textarea[aria-invalid="true"] { border-bottom-color: var(--error); }
+.field-error { margin: 0; font-size: 0.85rem; color: var(--error); }
+.form-status {
+  margin: 0;
+  padding: var(--space-2);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.form-status.success { border-color: var(--accent); }
+.form-status.error { border-color: var(--error); color: var(--error); }
+.hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+@media (min-width: 900px) {
+  .contact-grid { grid-template-columns: 1fr 1.3fr; }
+}
+
+.field input,
+.field textarea {
+  padding: 0.85rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.field input:focus,
+.field textarea:focus { border-color: var(--accent); }
+.field input[aria-invalid="true"],
+.field textarea[aria-invalid="true"] { border-color: var(--error); }
