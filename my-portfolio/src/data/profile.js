@@ -22,4 +22,8 @@ export const profile = {
         "",
         "",
     ],
+    socials: [
+        {label: "Email", url:""},
+        {label: "GitHub", url:""},
+    ],
 };
