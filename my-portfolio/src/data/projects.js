@@ -23,7 +23,7 @@ export const projects = [
     },
     {
         id: 2,
-        slug: "Jiro Productions & Neopowers Badminton Club (NBC) Branding Concept",
+        slug: "Jiro-Productions-&-Neopowers-Badminton-Club-(NBC)-Branding-Concept",
         name: "Jiro Productions & Neopowers Badminton Club (NBC) Branding Concept",
         category: "Branding & Graphic Design",
         type: "Hand-Drawn Concept Art / Activity Project",
@@ -45,7 +45,7 @@ export const projects = [
     },
     {
         id: 3,
-        slug: "Brew Haven Autumn Pumpkin Spice Latte Marketing Campaign",
+        slug: "Brew-Haven-Autumn-Pumpkin-Spice-Latte-Marketing-Campaign",
         name: "Brew Haven Autumn Pumpkin Spice Latte Marketing Campaign",
         category: "Digital Marketing & Graphic Design",
         type: "Social Media & Web Promotional Assets",
@@ -67,7 +67,7 @@ export const projects = [
     },
     {
         id: 4,
-        slug: "Jiro Production Branding & Logo Design Suite",
+        slug: "Jiro-Production-Branding-&-Logo-Design-Suite",
         name: "Jiro Production Branding & Logo Design Suite",
         category: "Branding & Graphic Design",
         type: "Corporate Identity & Logo Variations",
@@ -89,7 +89,7 @@ export const projects = [
     },
     {
         id: 5,
-        slug: "Jiro Custom Typography Explorations",
+        slug: "Jiro-Custom-Typography-Explorations",
         name: "Jiro Custom Typography Explorations",
         category: "Branding & Graphic Design",
         type: "Custom Logotype & Font Design",
@@ -111,7 +111,7 @@ export const projects = [
     },
     {
         id: 6,
-        slug: "Personal Portfolio Web Design Low-Fidelity Wireframes",
+        slug: "Personal-Portfolio-Web-Design-Low-Fidelity-Wireframes",
         name: "Personal Portfolio Web Design Low-Fidelity Wireframes",
         category: "Graphic Design",
         type: "CHand-Drawn Low-Fidelity Wireframes / Academic Activity Project",
@@ -133,8 +133,8 @@ export const projects = [
     },
     {
         id: 7,
-        slug: "AIka's Debut Portrait Photography Series",
-        name: "AIka's Debut Portrait Photography Series",
+        slug: "Aika's-Debut-Portrait-Photography-Series",
+        name: "Aika's Debut Portrait Photography Series",
         category: "Photography & Visual Arts",
         type: " Portrait & Event Photography",
         description: "A series of elegant portrait photographs featuring a subject wearing a detailed off-the-shoulder pink floral gown in indoor and balcony settings.",
@@ -155,8 +155,8 @@ export const projects = [
     },
     {
         id: 8,
-        slug: "Bird Perched on Streetlight Silhouetted ",
-        name: "Bird Perched on Streetlight Silhouetted ",
+        slug: "Bird-Perched-on-Streetlight-Silhouetted",
+        name: "Bird Perched on Streetlight Silhouetted",
         category: "Photography & Visual Arts",
         type: " Minimalist & Wildlife Photography",
         description: "A minimalist photographic composition depicting a small bird perched on the pole of an outdoor streetlight frame against an overcast sky.",
@@ -177,8 +177,8 @@ export const projects = [
     },
     {
         id: 9,
-        slug: "Waxing Gibbous Moon Astrophotography ",
-        name: "Waxing Gibbous Moon Astrophotography ",
+        slug: "Waxing-Gibbous-Moon-Astrophotography",
+        name: "Waxing Gibbous Moon Astrophotography",
         category: "Photography & Visual Arts",
         type: "Astrophotography & Night Sky Photography",
         description: "A high-contrast astrophotography shot depicting a detailed waxing gibbous moon set against a solid black night sky.",
