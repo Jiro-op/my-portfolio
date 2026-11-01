@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio-three-ivory-63.vercel.app/sitemap.xml
+Sitemap: https://zoletajulian.vercel.app/sitemap.xml

@@ -846,3 +846,5 @@ html {scroll-padding-top: 5rem;}
   from { opacity: 0; transform: translateY(-8px); }
   to { opacity: 1; transform: none; }
 }
+
+[data-theme="dark"] .logo-image { filter: invert(1); }
